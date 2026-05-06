@@ -1,0 +1,12 @@
+"""
+Vercel Serverless 函数入口
+"""
+import os
+import sys
+
+# 添加项目路径
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
+from app.main import app
+
+handler = app
